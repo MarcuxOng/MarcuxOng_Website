@@ -1,86 +1,158 @@
 {
   "personal": {
-    "name": "",
-    "title": "",
+    "name": "Marcux Ong",
+    "title": "Software Engineer & Full-Stack Developer",
     "bio": [
-      ""
+      "I'm currently pursuing a Diploma in Business and Financial Technology at Nanyang Polytechnic, where I've developed a strong foundation in full-stack development, database management, and software engineering.",
+      "As a Software Engineer (SRE) Intern at DBS Bank, I build applications that automate workflows and integrate LLMs, while developing full-stack solutions using Angular, Python FastAPI, and MariaDB. I'm passionate about creating efficient, scalable systems that solve real-world problems.",
+      "I enjoy working with both backend and frontend technologies, and exploring how design and code come together. Outside of coding, I've honed my customer service and time management skills as a Barista at Starbucks, which has strengthened my ability to work in fast-paced environments and collaborate effectively with teams."
     ],
-    "email": "",
-    "phone": "",
-    "location": "",
-    "github": "",
-    "linkedin": ""
+    "email": "marcuxongzl@gmail.com",
+    "phone": "(+65) 8668 9176",
+    "location": "Singapore",
+    "github": "https://github.com/MarcuxOng",
+    "linkedin": "https://www.linkedin.com/in/marcuxong/"
   },
   "education": {
-    "institution": "",
-    "location": "",
-    "degree": "",
-    "period": "",
+    "institution": "Nanyang Polytechnic",
+    "location": "Singapore",
+    "degree": "Diploma in Business and Financial Technology",
+    "period": "April 2023 - March 2026",
     "achievements": [
-      ""
+      "PolyFinTech Hackathon 2025 - Finalist"
     ]
   },
   "languages": [
-    { "name": "", "level": "", "badge": "" }
+    { "name": "Python", "level": 90, "badge": "🐍" },
+    { "name": "JavaScript", "level": 85, "badge": "⚡" },
+    { "name": "TypeScript", "level": 70, "badge": "📘" },
+    { "name": "SQL", "level": 85, "badge": "🗄️" },
+    { "name": "HTML5", "level": 90, "badge": "🌐" },
+    { "name": "CSS3", "level": 85, "badge": "🎨" },
+    { "name": "C#", "level": 60, "badge": "♯" }
   ],
   "frameworks": [
-    { "name": "", "category": "", "color": "" }
+    { "name": "React", "category": "Frontend", "color": "from-cyan-500 to-blue-500" },
+    { "name": "Angular", "category": "Frontend", "color": "from-red-500 to-pink-500" },
+    { "name": "FastAPI", "category": "Backend", "color": "from-teal-500 to-green-500" },
+    { "name": "Flask", "category": "Backend", "color": "from-gray-700 to-gray-900" },
+    { "name": "Django", "category": "Backend", "color": "from-green-700 to-green-900" }
   ],
   "tools": [
-    { "name": "", "icon": "" }
+    { "name": "Git/GitHub", "icon": "GitBranch" },
+    { "name": "MySQL", "icon": "Database" },
+    { "name": "Figma", "icon": "Code" },
+    { "name": "AI/LLM", "icon": "Cpu" }
   ],
   "interests": [
-    { "icon": "", "label": "", "value": "" }
+    { "icon": "Heart", "label": "Favorite Language", "value": "Python 🐍" },
+    { "icon": "Telescope", "label": "Currently Exploring", "value": "Next.js, DevOps, Cloud ☁️" },
+    { "icon": "Sparkles", "label": "Interests", "value": "Tech, AI/LLMs, Continuous Learning 📚" }
   ],
   "skills": [
-    { "icon": "", "label": "", "color": "" }
+    { "icon": "Code2", "label": "Full-Stack Development", "color": "from-blue-500 to-cyan-500" },
+    { "icon": "Database", "label": "Database Design", "color": "from-purple-500 to-pink-500" },
+    { "icon": "Cpu", "label": "AI/LLM Integration", "color": "from-orange-500 to-red-500" }
   ],
   "exploring": [
-    { "name": "", "color": "" }
+    { "name": "Next.js", "color": "from-slate-700 to-slate-900" },
+    { "name": "DevOps", "color": "from-blue-600 to-blue-800" },
+    { "name": "Cloud ☁️", "color": "from-cyan-500 to-blue-500" }
   ],
   "experiences": [
     {
-      "company": "",
-      "location": "",
-      "role": "",
-      "period": "",
-      "current": "True or False",
+      "company": "DBS Bank",
+      "location": "Singapore",
+      "role": "Software Engineer (SRE) Intern",
+      "period": "April 2025 - March 2026",
+      "current": true,
       "responsibilities": [
-        ""
+        "Built applications to automate workflows and integrate LLMs, streamlining processes and improving operational efficiency",
+        "Developed full-stack applications using Angular, Python FastAPI and MariaDB",
+        "Designed and optimized RESTful APIs for reliable data handling, simultaneously enhancing UI components and implementing component-based architecture principles to deliver cohesive, end-to-end features"
       ],
-      "technologies": [""],
-      "logo": ""
+      "technologies": ["Angular", "Python", "FastAPI", "MariaDB", "AI/LLM"],
+      "logo": "🏦"
+    },
+    {
+      "company": "Starbucks",
+      "location": "Singapore",
+      "role": "Barista",
+      "period": "December 2022 - March 2025",
+      "current": false,
+      "responsibilities": [
+        "Learn about coffee, improve on customer service skills, build up time management skills etc."
+      ],
+      "technologies": ["Customer Service", "Time Management", "Team Collaboration"],
+      "logo": "☕"
     }
   ],
   "projects": [
     {
-      "title": "",
-      "description": "",
-      "period": "",
-      "technologies": [""],
+      "title": "WealthPilot",
+      "description": "An AI-powered wealth management platform using Python FastAPI, React Vite, MySQL, and Google Gemini AI with real-time client analysis, product catalog, and historical tracking capabilities.",
+      "period": "September 2025",
+      "technologies": ["React Vite", "Python", "FastAPI", "MySQL", "Gemini AI", "SQLAlchemy"],
       "features": [
-        ""
+        "Developed RESTful APIs with SQLAlchemy ORM for client/product management",
+        "AI analysis endpoints with system prompt templates for regulatory compliance",
+        "Real-time client analysis and product recommendations",
+        "Historical tracking and data visualization"
       ],
-      "gradient": "",
-      "icon": ""
+      "gradient": "from-blue-500 to-cyan-500",
+      "icon": "💼"
+    },
+    {
+      "title": "To-Do App",
+      "description": "A full-stack task management application using Python FastAPI, React, MySQL, and WebSocket integration with real-time collaboration, workspace organization, and comprehensive task tracking capabilities.",
+      "period": "August 2025",
+      "technologies": ["React", "Python", "FastAPI", "MySQL", "WebSocket", "JWT", "SQLAlchemy"],
+      "features": [
+        "Implemented RESTful APIs with SQLAlchemy ORM for task/workspace management",
+        "JWT authentication for secure access control",
+        "WebSocket endpoints for real-time updates",
+        "Nested sub-tasks, comment threading, and role-based access control"
+      ],
+      "gradient": "from-purple-500 to-pink-500",
+      "icon": "✅"
     }
   ],
   "certifications": [
     {
-      "title": "",
-      "provider": "",
-      "date": "",
-      "description": "",
-      "skills": [""],
-      "link": "",
-      "gradient": "",
-      "icon": ""
+      "title": "Soft Skills in IT",
+      "provider": "Great Learning",
+      "date": "September 2025",
+      "description": "Gained key soft skills for IT fields, such as clear communication, teamwork, problem-solving, negotiation, and self-awareness. Understood their role in influencing others, building relationships, and career growth and the benefits such as adaptability, productivity, trust, and organizational skills.",
+      "skills": ["Communication", "Teamwork", "Problem-Solving", "Negotiation", "Self-Awareness"],
+      "link": "https://www.mygreatlearning.com/certificate/AVGXEUUM",
+      "gradient": "from-blue-500 to-cyan-500",
+      "icon": "💬"
+    },
+    {
+      "title": "Literacy in AI",
+      "provider": "AI Singapore",
+      "date": "October 2024",
+      "description": "Acquired foundational knowledge of Artificial Intelligence, including its concepts, applications, ethical considerations, and key technologies such as machine learning and natural language processing, along with their impact on industries and society.",
+      "skills": ["Artificial Intelligence", "Machine Learning", "NLP", "Ethics", "Applications"],
+      "link": "https://learn.aisingapore.org/certificate-verification/838FC14B2C-7F1143B019-150DBE3B2/",
+      "gradient": "from-purple-500 to-pink-500",
+      "icon": "🤖"
+    },
+    {
+      "title": "Foundations of Project Management",
+      "provider": "Google",
+      "date": "September 2024",
+      "description": "Learned the core principles of project management, including planning, scheduling, risk management, and stakeholder communication. Gained practical knowledge of project life cycles and tools for effective team collaboration.",
+      "skills": ["Planning", "Scheduling", "Risk Management", "Stakeholder Communication"],
+      "link": "https://www.coursera.org/account/accomplishments/verify/VK42JY4NLZOP",
+      "gradient": "from-orange-500 to-red-500",
+      "icon": "📊"
     }
   ],
   "stats": {
-    "experience": "",
-    "projects": "",
-    "certifications": "",
-    "commitment": ""
+    "experience": "1+",
+    "projects": "2+",
+    "certifications": "3+",
+    "commitment": "100%"
   }
 }

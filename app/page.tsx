@@ -28,7 +28,7 @@ export default function Home() {
 
   const skills = data.skills.map(skill => ({
     ...skill,
-    icon: iconMap[skill.icon]
+    icon: iconMap[skill.icon] || Code2 // Fallback to Code2 icon if not found
   }));
 
   return (

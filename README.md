@@ -105,9 +105,7 @@ To enable the contact form email functionality:
 
 ### Customizing Content
 
-Copy `data/template-data.json` and create `data/portfolio-data.json` as all portfolio content is centralized there. 
-
-Update this file to customize:
+All portfolio content is centralized in `data/portfolio-data.json`. Update this file to customize:
 
 - Personal information and contact details
 - Work experience and education

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { GraduationCap, Award, Code, Database, Cpu, GitBranch, Sparkles, Heart, Telescope, LucideIcon } from "lucide-react";
+import { GraduationCap, Award, Code, Code2, Database, Cpu, GitBranch, Sparkles, Heart, Telescope, LucideIcon } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { getPortfolioData } from "@/lib/utils";
@@ -15,6 +15,7 @@ export default function About() {
     GitBranch,
     Database,
     Code,
+    Code2,
     Cpu,
     Heart,
     Telescope,
@@ -25,11 +26,11 @@ export default function About() {
   const frameworks = data.frameworks;
   const tools = data.tools.map(tool => ({
     ...tool,
-    icon: iconMap[tool.icon]
+    icon: iconMap[tool.icon] || Code // Fallback to Code icon if not found
   }));
   const interests = data.interests.map(interest => ({
     ...interest,
-    icon: iconMap[interest.icon]
+    icon: iconMap[interest.icon] || Heart // Fallback to Heart icon if not found
   }));
 
   return (

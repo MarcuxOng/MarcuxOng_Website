@@ -1,6 +1,6 @@
 {
   "personal": {
-    "name": "Marcux Ong",
+    "name": "Marcux",
     "title": "Software Engineer & Full-Stack Developer",
     "bio": [
       "I'm currently pursuing a Diploma in Business and Financial Technology at Nanyang Polytechnic, where I've developed a strong foundation in full-stack development, database management, and software engineering.",
@@ -27,16 +27,13 @@
     { "name": "JavaScript", "level": 85, "badge": "⚡" },
     { "name": "TypeScript", "level": 70, "badge": "📘" },
     { "name": "SQL", "level": 85, "badge": "🗄️" },
-    { "name": "HTML5", "level": 90, "badge": "🌐" },
-    { "name": "CSS3", "level": 85, "badge": "🎨" },
     { "name": "C#", "level": 60, "badge": "♯" }
   ],
   "frameworks": [
     { "name": "React", "category": "Frontend", "color": "from-cyan-500 to-blue-500" },
     { "name": "Angular", "category": "Frontend", "color": "from-red-500 to-pink-500" },
     { "name": "FastAPI", "category": "Backend", "color": "from-teal-500 to-green-500" },
-    { "name": "Flask", "category": "Backend", "color": "from-gray-700 to-gray-900" },
-    { "name": "Django", "category": "Backend", "color": "from-green-700 to-green-900" }
+    { "name": "Flask", "category": "Backend", "color": "from-gray-700 to-gray-900" }
   ],
   "tools": [
     { "name": "Git/GitHub", "icon": "GitBranch" },

@@ -105,7 +105,9 @@ To enable the contact form email functionality:
 
 ### Customizing Content
 
-All portfolio content is centralized in `data/portfolio-data.json`. Update this file to customize:
+Copy `data/template-data.json` and create `data/portfolio-data.json` as all portfolio content is centralized there. 
+
+Update this file to customize:
 
 - Personal information and contact details
 - Work experience and education
@@ -142,33 +144,6 @@ All portfolio content is centralized in `data/portfolio-data.json`. Update this 
 2. Connect your repository to [Vercel](https://vercel.com)
 3. Add your environment variables in Vercel dashboard
 4. Deploy automatically with every push
-
-### Other Platforms
-The app can be deployed to any platform that supports Next.js:
-- Netlify
-- AWS Amplify
-- Railway
-- Render
-
-## 📝 Development Notes
-
-- Built with Next.js App Router for better performance and SEO
-- Uses TypeScript for type safety and better developer experience
-- Implements responsive design patterns with Tailwind CSS
-- Follows modern React patterns with hooks and functional components
-- Centralized data architecture for easy maintenance
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ---
 

@@ -12,12 +12,16 @@ export function createPageUrl(page: string): string {
 }
 
 export function getPortfolioData(): PortfolioData {
-  // Ensure proper type conversion for the JSON data
+  // Ensure proper type conversion for the JSON data to prevent deployment errors
   const portfolioData: PortfolioData = {
     ...portfolioDataRaw,
     languages: portfolioDataRaw.languages.map(lang => ({
       ...lang,
-      level: Number(lang.level)
+      level: typeof lang.level === 'number' ? lang.level : Number(lang.level)
+    })),
+    experiences: portfolioDataRaw.experiences.map(exp => ({
+      ...exp,
+      current: typeof exp.current === 'boolean' ? exp.current : Boolean(exp.current)
     }))
   } as PortfolioData;
   

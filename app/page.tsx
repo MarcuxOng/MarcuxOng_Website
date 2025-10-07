@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Code2, Database, Cpu, Sparkles, Github, Linkedin, Mail, Telescope } from "lucide-react";
+import { ArrowRight, Code2, Database, Cpu, Sparkles, Github, Linkedin, Mail, Telescope, LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getPortfolioData } from "@/lib/utils";
 
@@ -20,7 +20,7 @@ export default function Home() {
   }, []);
 
   // Map icon strings to actual icon components
-  const iconMap: Record<string, any> = {
+  const iconMap: Record<string, LucideIcon> = {
     Code2,
     Database,
     Cpu,

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { GraduationCap, Award, Code, Database, Cpu, GitBranch, Sparkles, Heart, Telescope } from "lucide-react";
+import { GraduationCap, Award, Code, Database, Cpu, GitBranch, Sparkles, Heart, Telescope, LucideIcon } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { getPortfolioData } from "@/lib/utils";
@@ -11,7 +11,7 @@ export default function About() {
   const data = getPortfolioData();
   
   // Map icon strings to actual icon components
-  const iconMap: Record<string, any> = {
+  const iconMap: Record<string, LucideIcon> = {
     GitBranch,
     Database,
     Code,

@@ -1,0 +1,86 @@
+{
+  "personal": {
+    "name": "",
+    "title": "",
+    "bio": [
+      ""
+    ],
+    "email": "",
+    "phone": "",
+    "location": "",
+    "github": "",
+    "linkedin": ""
+  },
+  "education": {
+    "institution": "",
+    "location": "",
+    "degree": "",
+    "period": "",
+    "achievements": [
+      ""
+    ]
+  },
+  "languages": [
+    { "name": "", "level": "", "badge": "" }
+  ],
+  "frameworks": [
+    { "name": "", "category": "", "color": "" }
+  ],
+  "tools": [
+    { "name": "", "icon": "" }
+  ],
+  "interests": [
+    { "icon": "", "label": "", "value": "" }
+  ],
+  "skills": [
+    { "icon": "", "label": "", "color": "" }
+  ],
+  "exploring": [
+    { "name": "", "color": "" }
+  ],
+  "experiences": [
+    {
+      "company": "",
+      "location": "",
+      "role": "",
+      "period": "",
+      "current": "True or False",
+      "responsibilities": [
+        ""
+      ],
+      "technologies": [""],
+      "logo": ""
+    }
+  ],
+  "projects": [
+    {
+      "title": "",
+      "description": "",
+      "period": "",
+      "technologies": [""],
+      "features": [
+        ""
+      ],
+      "gradient": "",
+      "icon": ""
+    }
+  ],
+  "certifications": [
+    {
+      "title": "",
+      "provider": "",
+      "date": "",
+      "description": "",
+      "skills": [""],
+      "link": "",
+      "gradient": "",
+      "icon": ""
+    }
+  ],
+  "stats": {
+    "experience": "",
+    "projects": "",
+    "certifications": "",
+    "commitment": ""
+  }
+}

@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "base44/about.jsx", "base44/certifications.jsx", "base44/contact.jsx", "base44/experience.jsx", "base44/home.jsx", "base44/projects.jsx"],
   "exclude": ["node_modules"]
 }

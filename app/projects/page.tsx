@@ -115,7 +115,7 @@ export default function Projects() {
                 Check out my GitHub profile for more projects, open-source contributions, and code samples.
               </p>
               <a
-                href="https://github.com/marcuxongzl"
+                href="https://github.com/MarcuxOng"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Github, Linkedin, Send, CheckCircle2, AlertCircle } from "lucide-react";
+import { Mail, MapPin, Github, Linkedin, Send, CheckCircle2, AlertCircle } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -143,7 +143,7 @@ export default function Contact() {
             className="lg:col-span-2 space-y-6"
           >
             {/* Contact Cards */}
-            {contactInfo.map((info, index) => {
+            {/* {contactInfo.map((info, index) => {
               const Icon = info.icon;
               return (
                 <motion.div
@@ -176,7 +176,7 @@ export default function Contact() {
                   </Card>
                 </motion.div>
               );
-            })}
+            })} */}
 
             {/* Social Links */}
             <motion.div

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, MapPin, Github, Linkedin, Send, CheckCircle2, AlertCircle } from "lucide-react";
+import { Github, Linkedin, Send, CheckCircle2, AlertCircle } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -78,29 +78,6 @@ export default function Contact() {
     setIsSubmitting(false);
   };
 
-  const contactInfo = [
-    {
-      icon: Mail,
-      label: "Email",
-      value: data.personal.email,
-      link: `mailto:${data.personal.email}`,
-      gradient: "from-blue-500 to-cyan-500",
-    },
-    // {
-    //   icon: Phone,
-    //   label: "Phone",
-    //   value: data.personal.phone,
-    //   link: `tel:${data.personal.phone.replace(/[^0-9+]/g, '')}`,
-    //   gradient: "from-purple-500 to-pink-500",
-    // },
-    {
-      icon: MapPin,
-      label: "Location",
-      value: data.personal.location,
-      gradient: "from-orange-500 to-red-500",
-    },
-  ];
-
   const socialLinks = [
     {
       icon: Github,
@@ -142,41 +119,6 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:col-span-2 space-y-6"
           >
-            {/* Contact Cards */}
-            {/* {contactInfo.map((info, index) => {
-              const Icon = info.icon;
-              return (
-                <motion.div
-                  key={info.label}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3 + index * 0.1, duration: 0.5 }}
-                >
-                  <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm hover:border-slate-700 transition-all duration-300 group">
-                    <CardContent className="p-6">
-                      <div className="flex items-center gap-4">
-                        <div className={`p-4 rounded-xl bg-gradient-to-br ${info.gradient} group-hover:scale-110 transition-transform duration-300`}>
-                          <Icon className="w-6 h-6 text-white" />
-                        </div>
-                        <div>
-                          <div className="text-slate-400 text-sm mb-1">{info.label}</div>
-                          {info.link ? (
-                            <a
-                              href={info.link}
-                              className="text-white font-medium hover:text-blue-400 transition-colors"
-                            >
-                              {info.value}
-                            </a>
-                          ) : (
-                            <div className="text-white font-medium">{info.value}</div>
-                          )}
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              );
-            })} */}
 
             {/* Social Links */}
             <motion.div

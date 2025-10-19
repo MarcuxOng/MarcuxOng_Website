@@ -7,8 +7,6 @@
       "As a Software Engineer (SRE) Intern at DBS Bank, I build applications that automate workflows and integrate LLMs, while developing full-stack solutions using Angular, Python FastAPI, and MariaDB. I'm passionate about creating efficient, scalable systems that solve real-world problems.",
       "I enjoy working with both backend and frontend technologies, and exploring how design and code come together. Outside of coding, I've honed my customer service and time management skills as a Barista at Starbucks, which has strengthened my ability to work in fast-paced environments and collaborate effectively with teams."
     ],
-    "email": "marcuxongzl@gmail.com",
-    "location": "Singapore",
     "github": "https://github.com/MarcuxOng",
     "linkedin": "https://www.linkedin.com/in/marcuxong/"
   },
@@ -18,7 +16,8 @@
     "degree": "Diploma in Business and Financial Technology",
     "period": "April 2023 - March 2026",
     "achievements": [
-      "PolyFinTech Hackathon 2025 - Finalist"
+      "PolyFinTech Hackathon 2025 - Finalist",
+      "SIT-Glasgow Hackathon 2025 - Participation"
     ]
   },
   "languages": [

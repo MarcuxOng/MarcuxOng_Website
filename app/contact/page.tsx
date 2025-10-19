@@ -86,13 +86,13 @@ export default function Contact() {
       link: `mailto:${data.personal.email}`,
       gradient: "from-blue-500 to-cyan-500",
     },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: data.personal.phone,
-      link: `tel:${data.personal.phone.replace(/[^0-9+]/g, '')}`,
-      gradient: "from-purple-500 to-pink-500",
-    },
+    // {
+    //   icon: Phone,
+    //   label: "Phone",
+    //   value: data.personal.phone,
+    //   link: `tel:${data.personal.phone.replace(/[^0-9+]/g, '')}`,
+    //   gradient: "from-purple-500 to-pink-500",
+    // },
     {
       icon: MapPin,
       label: "Location",

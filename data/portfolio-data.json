@@ -2,24 +2,26 @@
   "personal": {
     "name": "Marcux",
     "title": "Aspiring Software Engineer",
+    "subtitle": "Passionate about leveraging technology to solve real-world problems.",
     "bio": [
-      "I'm currently pursuing a Diploma in Business and Financial Technology at Nanyang Polytechnic, where I've developed a strong foundation in full-stack development, database management, and software engineering.",
-      "As a Software Engineer (SRE) Intern at DBS Bank, I build applications that automate workflows and integrate LLMs, while developing full-stack solutions using Angular, Python FastAPI, and MariaDB. I'm passionate about creating efficient, scalable systems that solve real-world problems.",
-      "I enjoy working with both backend and frontend technologies, and exploring how design and code come together. Outside of coding, I've honed my customer service and time management skills as a Barista at Starbucks, which has strengthened my ability to work in fast-paced environments and collaborate effectively with teams."
+      "I'm pursuing a Diploma in Business and Financial Technology at Nanyang Polytechnic, developing expertise in full-stack development, database management, and software engineering. Currently working as a Software Engineer (SRE) Intern at DBS Bank, where I build applications that automate workflows and integrate LLMs using Angular, Python FastAPI, and MariaDB.",
+      "I'm passionate about creating efficient, scalable systems that solve real-world problems. My experience as a Barista at Starbucks has strengthened my ability to work in fast-paced environments and collaborate effectively with teams."
     ],
     "github": "https://github.com/MarcuxOng",
     "linkedin": "https://www.linkedin.com/in/marcuxong/"
   },
-  "education": {
-    "institution": "Nanyang Polytechnic",
-    "location": "Singapore",
-    "degree": "Diploma in Business and Financial Technology",
-    "period": "April 2023 - March 2026",
-    "achievements": [
-      "PolyFinTech Hackathon 2025 - Finalist",
-      "SIT-Glasgow Hackathon 2025 - Participation"
-    ]
-  },
+  "education": [
+    {
+      "institution": "Nanyang Polytechnic",
+      "location": "Singapore",
+      "degree": "Diploma in Business and Financial Technology",
+      "period": "April 2023 - March 2026",
+      "achievements": [
+        "PolyFinTech Hackathon 2025 - Finalist",
+        "SIT-Glasgow Hackathon 2025 - Participation"
+      ]
+    }
+  ],
   "languages": [
     { "name": "Python", "level": 90, "badge": "🐍" },
     { "name": "JavaScript", "level": 85, "badge": "⚡" },
@@ -45,9 +47,9 @@
     { "icon": "Sparkles", "label": "Interests", "value": "Tech, AI/LLMs, Continuous Learning 📚" }
   ],
   "skills": [
-    { "icon": "Code2", "label": "Full-Stack Development", "color": "from-blue-500 to-cyan-500" },
-    { "icon": "Database", "label": "Database Design", "color": "from-purple-500 to-pink-500" },
-    { "icon": "Cpu", "label": "AI/LLM Integration", "color": "from-orange-500 to-red-500" }
+    { "icon": "Code2", "label": "Full-Stack Development", "color": "from-blue-500 to-cyan-500", "level": "Intermediate" },
+    { "icon": "Database", "label": "Database Design", "color": "from-purple-500 to-pink-500", "level": "Intermediate" },
+    { "icon": "Cpu", "label": "AI/LLM Integration", "color": "from-orange-500 to-red-500", "level": "Beginner" }
   ],
   "exploring": [
     { "name": "Next.js", "color": "from-slate-700 to-slate-900" },
@@ -66,7 +68,7 @@
         "Developed full-stack applications using Angular, Python FastAPI and MariaDB",
         "Designed and optimized RESTful APIs for reliable data handling, simultaneously enhancing UI components and implementing component-based architecture principles to deliver cohesive, end-to-end features"
       ],
-      "technologies": ["Angular", "Python", "FastAPI", "MariaDB", "AI/LLM"],
+      "skills": ["Angular", "Python", "FastAPI", "MariaDB", "AI/LLM"],
       "logo": "🏦"
     },
     {
@@ -78,7 +80,7 @@
       "responsibilities": [
         "Learn about coffee, improve on customer service skills, build up time management skills etc."
       ],
-      "technologies": ["Customer Service", "Time Management", "Team Collaboration"],
+      "skills": ["Customer Service", "Time Management", "Team Collaboration"],
       "logo": "☕"
     }
   ],
@@ -87,7 +89,7 @@
       "title": "WealthPilot",
       "description": "An AI-powered wealth management platform using Python FastAPI, React Vite, MySQL, and Google Gemini AI with real-time client analysis, product catalog, and historical tracking capabilities.",
       "period": "September 2025",
-      "technologies": ["React Vite", "Python", "FastAPI", "MySQL", "Gemini AI", "SQLAlchemy"],
+      "technologies": ["React Vite", "Python", "FastAPI", "MySQL", "Gemini"],
       "features": [
         "Developed RESTful APIs with SQLAlchemy ORM for client/product management",
         "AI analysis endpoints with system prompt templates for regulatory compliance",
@@ -101,7 +103,7 @@
       "title": "To-Do App",
       "description": "A full-stack task management application using Python FastAPI, React, MySQL, and WebSocket integration with real-time collaboration, workspace organization, and comprehensive task tracking capabilities.",
       "period": "August 2025",
-      "technologies": ["React", "Python", "FastAPI", "MySQL", "WebSocket", "JWT", "SQLAlchemy"],
+      "technologies": ["React", "Python", "FastAPI", "MySQL", "WebSocket", "JWT"],
       "features": [
         "Implemented RESTful APIs with SQLAlchemy ORM for task/workspace management",
         "JWT authentication for secure access control",

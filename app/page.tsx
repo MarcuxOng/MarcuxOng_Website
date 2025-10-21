@@ -71,7 +71,7 @@ export default function Home() {
                   {data.personal.title}
                 </h2>
                 <p className="text-lg text-slate-400 leading-relaxed max-w-xl">
-                  {data.personal.bio[0]}
+                  {data.personal.subtitle}
                 </p>
               </div>
 
@@ -106,12 +106,6 @@ export default function Home() {
                 >
                   <Linkedin className="w-6 h-6 text-slate-300" />
                 </a>
-                <a
-                  href={`mailto:${data.personal.email}`}
-                  className="p-3 rounded-lg bg-slate-800/50 border border-slate-700 hover:border-blue-500 hover:bg-slate-800 transition-all duration-300"
-                >
-                  <Mail className="w-6 h-6 text-slate-300" />
-                </a>
               </div>
             </motion.div>
 
@@ -138,7 +132,7 @@ export default function Home() {
                       </div>
                       <div>
                         <h3 className="text-xl font-semibold text-white">{skill.label}</h3>
-                        <p className="text-slate-400 text-sm mt-1">Expertise Level: Intermidiate</p>
+                        <p className="text-slate-400 text-sm mt-1">Expertise Level: {skill.level}</p>
                       </div>
                     </div>
                   </motion.div>

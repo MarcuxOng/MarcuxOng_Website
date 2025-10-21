@@ -95,11 +95,11 @@ export default function Experience() {
                         </ul>
                       </div>
 
-                      {/* Technologies */}
+                      {/* Technologies & Skills */}
                       <div>
                         <h4 className="text-white font-semibold mb-3">Technologies & Skills</h4>
                         <div className="flex flex-wrap gap-2">
-                          {exp.technologies.map((tech) => (
+                          {exp.skills.map((tech) => (
                             <Badge
                               key={tech}
                               variant="secondary"

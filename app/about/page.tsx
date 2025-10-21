@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { GraduationCap, Award, Code, Code2, Database, Cpu, GitBranch, Sparkles, Heart, Telescope, LucideIcon } from "lucide-react";
+import { Code, Code2, Database, Cpu, GitBranch, Sparkles, Heart, Telescope, LucideIcon } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { getPortfolioData } from "@/lib/utils";
@@ -52,14 +52,13 @@ export default function About() {
         </motion.div>
 
         {/* Main Content */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="mb-16">
           {/* Bio Card */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-2"
           >
             <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm">
               <CardHeader>
@@ -71,44 +70,6 @@ export default function About() {
                     {paragraph}
                   </p>
                 ))}
-              </CardContent>
-            </Card>
-          </motion.div>
-
-          {/* Education Card */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm h-full">
-              <CardHeader>
-                <div className="flex items-center gap-3">
-                  <div className="p-3 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600">
-                    <GraduationCap className="w-6 h-6 text-white" />
-                  </div>
-                  <h2 className="text-2xl font-bold text-white">Education</h2>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <h3 className="text-lg font-semibold text-white">{data.education.institution}</h3>
-                  <p className="text-slate-400 text-sm">{data.education.location}</p>
-                  <p className="text-slate-300 mt-2">{data.education.degree}</p>
-                  <p className="text-slate-500 text-sm mt-1">{data.education.period}</p>
-                </div>
-                {data.education.achievements.length > 0 && (
-                  <div className="pt-4 border-t border-slate-800">
-                    <div className="flex items-center gap-2 mb-2">
-                      <Award className="w-4 h-4 text-yellow-500" />
-                      <span className="text-sm font-semibold text-white">Achievements</span>
-                    </div>
-                    {data.education.achievements.map((achievement, index) => (
-                      <p key={index} className="text-slate-300 text-sm">{achievement}</p>
-                    ))}
-                  </div>
-                )}
               </CardContent>
             </Card>
           </motion.div>

@@ -1,10 +1,8 @@
 export interface Personal {
   name: string;
   title: string;
+  subtitle : string;
   bio: string[];
-  email: string;
-  phone: string;
-  location: string;
   github: string;
   linkedin: string;
 }
@@ -44,6 +42,7 @@ export interface Skill {
   icon: string;
   label: string;
   color: string;
+  level: string;
 }
 
 export interface Exploring {
@@ -58,7 +57,7 @@ export interface Experience {
   period: string;
   current: boolean;
   responsibilities: string[];
-  technologies: string[];
+  skills: string[];
   logo: string;
 }
 
@@ -92,7 +91,7 @@ export interface Stats {
 
 export interface PortfolioData {
   personal: Personal;
-  education: Education;
+  education: Education[];
   languages: Language[];
   frameworks: Framework[];
   tools: Tool[];

@@ -3,6 +3,7 @@ export interface Personal {
   title: string;
   subtitle : string;
   bio: string[];
+  email: string;
   github: string;
   linkedin: string;
 }

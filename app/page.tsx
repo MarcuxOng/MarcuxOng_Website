@@ -106,6 +106,12 @@ export default function Home() {
                 >
                   <Linkedin className="w-6 h-6 text-slate-300" />
                 </a>
+                <a
+                  href={`mailto:${data.personal.email}`}
+                  className="p-3 rounded-lg bg-slate-800/50 border border-slate-700 hover:border-blue-500 hover:bg-slate-800 transition-all duration-300"
+                >
+                  <Mail className="w-6 h-6 text-slate-300" />
+                </a>
               </div>
             </motion.div>
 

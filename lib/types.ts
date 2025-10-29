@@ -65,7 +65,7 @@ export interface Experience {
 export interface Project {
   title: string;
   description: string;
-  period: string;
+  link: string;
   technologies: string[];
   features: string[];
   gradient: string;

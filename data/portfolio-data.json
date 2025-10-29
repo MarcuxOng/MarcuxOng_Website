@@ -87,9 +87,24 @@
   ],
   "projects": [
     {
+      "title": "FinSight",
+      "description": "An AI-powered personal finance management platform using Python FastAPI, Next.js 16, PostgreSQL (Supabase), and Google Gemini AI with automated transaction categorization, spending analytics, and personalized financial insights generation.",
+      "link": "https://github.com/MarcuxOng/finsight",
+      "technologies": ["Next.js", "Python", "FastAPI", "PostgreSQL", "Supabase", "Gemini"],
+      "features": [
+        "Built RESTful APIs with Row Level Security (RLS) policies for secure transaction management",
+        "AI-driven categorization service using prompt engineering with Google Gemini AI",
+        "Statistical anomaly detection for unusual spending patterns using NumPy and scikit-learn",
+        "CSV bulk import functionality with Pandas for seamless bank statement integration",
+        "Automated transaction categorization and personalized financial insights generation"
+      ],
+      "gradient": "from-green-500 to-cyan-500",
+      "icon": "💼"
+    },
+    {
       "title": "WealthPilot",
       "description": "An AI-powered wealth management platform using Python FastAPI, React Vite, MySQL, and Google Gemini AI with real-time client analysis, product catalog, and historical tracking capabilities.",
-      "period": "September 2025",
+      "link": "https://github.com/MarcuxOng/wealthpilot",
       "technologies": ["React Vite", "Python", "FastAPI", "MySQL", "Gemini"],
       "features": [
         "Developed RESTful APIs with SQLAlchemy ORM for client/product management",
@@ -103,7 +118,7 @@
     {
       "title": "To-Do App",
       "description": "A full-stack task management application using Python FastAPI, React, MySQL, and WebSocket integration with real-time collaboration, workspace organization, and comprehensive task tracking capabilities.",
-      "period": "August 2025",
+      "link": "https://github.com/MarcuxOng/todo-app",
       "technologies": ["React", "Python", "FastAPI", "MySQL", "WebSocket", "JWT"],
       "features": [
         "Implemented RESTful APIs with SQLAlchemy ORM for task/workspace management",

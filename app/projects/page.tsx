@@ -46,9 +46,19 @@ export default function Projects() {
                     <div className={`p-4 rounded-2xl bg-gradient-to-br ${project.gradient} text-4xl`}>
                       {project.icon}
                     </div>
-                    <Badge variant="secondary" className="bg-slate-800 text-slate-300">
-                      {project.period}
-                    </Badge>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button
+                        variant="outline"
+                        className="border-slate-700 text-slate-300 hover:border-blue-500 hover:text-blue-400 transition-colors text-sm h-8 px-3"
+                      >
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Link
+                      </Button>
+                    </a>
                   </div>
                   <h2 className="text-2xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
                     {project.title}

@@ -75,7 +75,6 @@ export interface Project {
 export interface Certification {
   title: string;
   provider: string;
-  date: string;
   description: string;
   skills: string[];
   link: string;

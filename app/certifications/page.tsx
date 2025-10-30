@@ -53,11 +53,9 @@ export default function Certifications() {
                           {cert.title}
                         </h2>
                         <div className="flex flex-wrap items-center gap-4 text-sm">
-                          <span className="text-blue-400 font-semibold">{cert.provider}</span>
-                          <div className="flex items-center gap-2 text-slate-400">
-                            <Calendar className="w-4 h-4" />
-                            {cert.date}
-                          </div>
+                          <span className="text-blue-400 font-semibold">
+                            {cert.provider}
+                          </span>
                         </div>
                       </div>
                     </div>

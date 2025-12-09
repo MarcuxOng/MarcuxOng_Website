@@ -111,55 +111,46 @@ export default function Contact() {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-5 gap-8">
-          {/* Contact Information */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="lg:col-span-2 space-y-6"
-          >
+        {/* Social Links - Centered at Top */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          className="max-w-3xl mx-auto mb-8"
+        >
+          <Card className="bg-gradient-to-br from-slate-900/80 to-slate-900/50 border-slate-800 backdrop-blur-sm">
+            <CardHeader>
+              <h3 className="text-white font-semibold text-center">Connect With Me</h3>
+            </CardHeader>
+            <CardContent>
+              <div className="flex gap-4">
+                {socialLinks.map((social) => {
+                  const Icon = social.icon;
+                  return (
+                    <a
+                      key={social.label}
+                      href={social.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`flex-1 p-4 rounded-xl bg-gradient-to-br ${social.gradient} hover:scale-105 transition-all duration-300 flex flex-col items-center gap-2 text-white`}
+                    >
+                      <Icon className="w-6 h-6" />
+                      <span className="text-sm font-medium">{social.label}</span>
+                    </a>
+                  );
+                })}
+              </div>
+            </CardContent>
+          </Card>
+        </motion.div>
 
-            {/* Social Links */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.5 }}
-            >
-              <Card className="bg-gradient-to-br from-slate-900/80 to-slate-900/50 border-slate-800 backdrop-blur-sm">
-                <CardHeader>
-                  <h3 className="text-white font-semibold">Connect With Me</h3>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex gap-4">
-                    {socialLinks.map((social) => {
-                      const Icon = social.icon;
-                      return (
-                        <a
-                          key={social.label}
-                          href={social.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className={`flex-1 p-4 rounded-xl bg-gradient-to-br ${social.gradient} hover:scale-105 transition-all duration-300 flex flex-col items-center gap-2 text-white`}
-                        >
-                          <Icon className="w-6 h-6" />
-                          <span className="text-sm font-medium">{social.label}</span>
-                        </a>
-                      );
-                    })}
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
-          </motion.div>
-
-          {/* Contact Form */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="lg:col-span-3"
-          >
+        {/* Contact Form */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="max-w-3xl mx-auto"
+        >
             <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm">
               <CardHeader>
                 <h2 className="text-2xl font-bold text-white">Send Me a Message</h2>
@@ -283,7 +274,6 @@ export default function Contact() {
               </CardContent>
             </Card>
           </motion.div>
-        </div>
       </div>
     </div>
   );

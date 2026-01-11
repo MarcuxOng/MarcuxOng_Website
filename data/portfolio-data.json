@@ -39,9 +39,11 @@
   ],
   "tools": [
     { "name": "Git/GitHub", "icon": "GitBranch" },
+    { "name": "Github Actions", "icon": "GitBranch" },
+    { "name": "Docker", "icon": "Box" },
+    { "name": "AI/LLM", "icon": "Cpu" },
     { "name": "MySQL", "icon": "Database" },
-    { "name": "Figma", "icon": "Code" },
-    { "name": "AI/LLM", "icon": "Cpu" }
+    { "name": "Figma", "icon": "Code" }
   ],
   "interests": [
     { "icon": "Heart", "label": "Favorite Language", "value": "Python 🐍" },

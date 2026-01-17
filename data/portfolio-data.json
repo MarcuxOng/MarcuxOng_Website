@@ -53,7 +53,7 @@
   "skills": [
     { "icon": "Code2", "label": "Full-Stack Development", "color": "from-blue-500 to-cyan-500", "level": "Intermediate" },
     { "icon": "Database", "label": "Database Design", "color": "from-purple-500 to-pink-500", "level": "Intermediate" },
-    { "icon": "Cpu", "label": "AI/LLM Integration", "color": "from-orange-500 to-red-500", "level": "Beginner" }
+    { "icon": "Cpu", "label": "AI/LLM Integration", "color": "from-orange-500 to-red-500", "level": "Intermediate" }
   ],
   "exploring": [
     { "name": "Next.js", "color": "from-slate-700 to-slate-900" },

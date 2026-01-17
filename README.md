@@ -1,5 +1,3 @@
-# My Website 
-
 ## 🤝 Let's Connect!
 
 I'm always excited to collaborate on interesting projects or discuss new opportunities in software engineering and AI/ML integration.

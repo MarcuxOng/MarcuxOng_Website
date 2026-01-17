@@ -21,8 +21,8 @@ export default function Certifications() {
           transition={{ duration: 0.8 }}
           className="text-center mb-24"
         >
-          <h1 className="text-5xl md:text-7xl font-light serif-display text-[#2D2D2D] mb-6">
-            <span className="gradient-text font-medium">Certifications</span> & Learning
+          <h1 className="text-5xl md:text-7xl font-light serif-display mb-6">
+            <span className="text-[#2D2D2D] font-medium">Certifications</span> <span className="text-[#9C8B7E]">& Learning</span>
           </h1>
           <p className="text-xl text-[#6B6B6B] max-w-2xl mx-auto font-light">
             Continuous learning and professional development achievements

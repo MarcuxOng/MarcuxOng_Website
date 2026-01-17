@@ -31,12 +31,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="light">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-950 text-slate-100 overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#F5F3EF] text-[#2D2D2D] overflow-x-hidden`}
       >
         <Navigation />
-        <main className="pt-16">
+        <main className="pt-20">
           {children}
         </main>
       </body>

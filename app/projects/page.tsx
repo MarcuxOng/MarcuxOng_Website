@@ -13,37 +13,37 @@ export default function Projects() {
   const projects = data.projects;
 
   return (
-    <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-32 px-6 sm:px-8 lg:px-12 bg-[#F5F3EF]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          transition={{ duration: 0.8 }}
+          className="text-center mb-24"
         >
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-            Featured <span className="gradient-text">Projects</span>
+          <h1 className="text-5xl md:text-7xl font-light serif-display text-[#2D2D2D] mb-6">
+            Featured <span className="gradient-text font-medium">Projects</span>
           </h1>
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+          <p className="text-xl text-[#6B6B6B] max-w-2xl mx-auto font-light">
             Showcasing my technical skills through real-world applications
           </p>
         </motion.div>
 
         {/* Projects Grid */}
-        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid lg:grid-cols-2 gap-12 mb-24">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.2, duration: 0.6 }}
+              transition={{ delay: index * 0.2, duration: 0.8 }}
             >
-              <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm hover:border-slate-700 transition-all duration-300 h-full group">
-                <CardHeader>
-                  <div className="flex items-start justify-between gap-4 mb-4">
-                    <div className={`p-4 rounded-2xl bg-gradient-to-br ${project.gradient} text-4xl`}>
+              <Card className="bg-[#FFFFFF] border-2 border-[#9C8B7E] luxury-shadow h-full group">
+                <CardHeader className="space-y-6">
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="text-5xl p-6 bg-[#E8DED3] border border-[#9C8B7E] group-hover:border-[#9C8B7E] transition-all duration-500">
                       {project.icon}
                     </div>
                     <a
@@ -53,31 +53,31 @@ export default function Projects() {
                     >
                       <Button
                         variant="outline"
-                        className="border-slate-700 text-slate-300 hover:border-blue-500 hover:text-blue-400 transition-colors text-sm h-8 px-3"
+                        className="border-2 border-[#9C8B7E] text-[#9C8B7E] hover:bg-[#9C8B7E] hover:text-[#2D2D2D] transition-all duration-500 h-10 px-5"
                       >
                         <ExternalLink className="w-4 h-4 mr-2" />
-                        Link
+                        View
                       </Button>
                     </a>
                   </div>
-                  <h2 className="text-2xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                  <h2 className="text-3xl font-light serif-display text-[#2D2D2D] group-hover:text-[#9C8B7E] transition-colors duration-500">
                     {project.title}
                   </h2>
-                  <p className="text-slate-300 leading-relaxed">
+                  <p className="text-[#6B6B6B] leading-relaxed font-light">
                     {project.description}
                   </p>
                 </CardHeader>
-                <CardContent className="space-y-6">
+                <CardContent className="space-y-8">
                   {/* Key Features */}
                   <div>
-                    <h3 className="text-white font-semibold mb-3 flex items-center gap-2">
-                      <Sparkles className="w-4 h-4 text-yellow-500" />
+                    <h3 className="text-[#2D2D2D] font-medium mb-4 flex items-center gap-2 uppercase tracking-wide text-sm">
+                      <Sparkles className="w-4 h-4 text-[#9C8B7E]" />
                       Key Features
                     </h3>
-                    <ul className="space-y-2">
+                    <ul className="space-y-3">
                       {project.features.map((feature, idx) => (
-                        <li key={idx} className="text-slate-300 text-sm leading-relaxed flex gap-3">
-                          <span className="text-blue-500 mt-1">•</span>
+                        <li key={idx} className="text-[#6B6B6B] text-sm leading-relaxed flex gap-3 font-light">
+                          <span className="text-[#9C8B7E] mt-1">—</span>
                           <span>{feature}</span>
                         </li>
                       ))}
@@ -86,13 +86,13 @@ export default function Projects() {
 
                   {/* Technologies */}
                   <div>
-                    <h3 className="text-white font-semibold mb-3">Tech Stack</h3>
+                    <h3 className="text-[#2D2D2D] font-medium mb-4 uppercase tracking-wide text-sm">Tech Stack</h3>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech) => (
                         <Badge
                           key={tech}
                           variant="outline"
-                          className="border-slate-700 text-slate-300 hover:border-blue-500 hover:text-blue-400 transition-colors"
+                          className="border-[#9C8B7E] bg-[#E8DED3] text-[#6B6B6B] hover:border-[#9C8B7E] hover:bg-[#9C8B7E] hover:text-[#2D2D2D] transition-all duration-500 px-3 py-1"
                         >
                           {tech}
                         </Badge>
@@ -113,15 +113,15 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <Card className="bg-gradient-to-br from-slate-900/80 to-slate-900/50 border-slate-800 backdrop-blur-sm">
+          <Card className="bg-[#F9F6F2] border-2 border-[#E8DED3] luxury-shadow">
             <CardContent className="p-12">
               <div className="flex justify-center mb-6">
-                <div className="p-6 rounded-full bg-gradient-to-br from-blue-500 to-purple-600">
-                  <Github className="w-12 h-12 text-white" />
+                <div className="p-6 bg-[#9C8B7E]/10 border-2 border-[#9C8B7E]">
+                  <Github className="w-12 h-12 text-[#9C8B7E]" />
                 </div>
               </div>
-              <h3 className="text-3xl font-bold text-white mb-4">More Projects on GitHub</h3>
-              <p className="text-slate-300 mb-8 max-w-2xl mx-auto">
+              <h3 className="text-3xl font-light serif-display text-[#2D2D2D] mb-4">More Projects on GitHub</h3>
+              <p className="text-[#6B6B6B] mb-8 max-w-2xl mx-auto font-light">
                 Check out my GitHub profile for more projects, open-source contributions, and code samples.
               </p>
               <a
@@ -129,7 +129,7 @@ export default function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-6 text-lg rounded-xl glow-effect">
+                <Button className="bg-[#2D2D2D] hover:bg-[#1F1F1F] text-white px-8 py-6 text-lg font-medium transition-all duration-500 luxury-shadow">
                   Visit My GitHub
                   <ExternalLink className="w-5 h-5 ml-2" />
                 </Button>

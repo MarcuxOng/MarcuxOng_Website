@@ -34,39 +34,39 @@ export default function About() {
   }));
 
   return (
-    <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-32 px-6 sm:px-8 lg:px-12 bg-[#F5F3EF]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          transition={{ duration: 0.8 }}
+          className="text-center mb-24"
         >
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-            About <span className="gradient-text">Me</span>
+          <h1 className="text-5xl md:text-7xl font-light serif-display text-[#2D2D2D] mb-6">
+            About <span className="gradient-text font-medium">Me</span>
           </h1>
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+          <p className="text-xl text-[#6B6B6B] max-w-2xl mx-auto font-light">
             Aspiring Software Engineer passionate about building applications, solving problems, and constantly learning
           </p>
         </motion.div>
 
         {/* Main Content */}
-        <div className="mb-16">
+        <div className="mb-24">
           {/* Bio Card */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8 }}
           >
-            <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm">
+            <Card className="bg-[#FFFFFF] border-2 border-[#9C8B7E] luxury-shadow">
               <CardHeader>
-                <h2 className="text-2xl font-bold text-white">My Story</h2>
+                <h2 className="text-3xl font-light serif-display text-[#2D2D2D]">My Story</h2>
               </CardHeader>
-              <CardContent className="space-y-4 text-slate-300">
+              <CardContent className="space-y-6 text-[#6B6B6B] leading-loose">
                 {data.personal.bio.map((paragraph, index) => (
-                  <p key={index} className="leading-relaxed">
+                  <p key={index} className="font-light text-lg">
                     {paragraph}
                   </p>
                 ))}
@@ -77,36 +77,36 @@ export default function About() {
 
         {/* What I'm Up To */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-16"
+          transition={{ duration: 0.8 }}
+          className="mb-24"
         >
-          <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-            <Sparkles className="w-8 h-8 text-yellow-500" />
+          <h2 className="text-4xl font-light serif-display text-[#2D2D2D] mb-12 flex items-center gap-4">
+            <Sparkles className="w-8 h-8 text-[#9C8B7E]" />
             What I&apos;m About
           </h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-8">
             {interests.map((interest, index) => {
               const Icon = interest.icon;
               return (
                 <motion.div
                   key={interest.label}
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: index * 0.1, duration: 0.5 }}
+                  transition={{ delay: index * 0.15, duration: 0.8 }}
                 >
-                  <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm hover:border-slate-700 transition-all duration-300 group">
-                    <CardContent className="p-6">
-                      <div className="flex items-start gap-4">
-                        <div className="p-3 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 group-hover:scale-110 transition-transform duration-300">
-                          <Icon className="w-6 h-6 text-white" />
+                  <Card className="bg-[#FFFFFF] border-2 border-[#9C8B7E] luxury-shadow group">
+                    <CardContent className="p-8">
+                      <div className="flex items-start gap-5">
+                        <div className="p-4 bg-[#E8DED3] border border-[#9C8B7E] group-hover:border-[#9C8B7E] transition-all duration-500">
+                          <Icon className="w-6 h-6 text-[#9C8B7E]" />
                         </div>
                         <div>
-                          <div className="text-slate-400 text-sm mb-1">{interest.label}</div>
-                          <div className="text-white font-medium">{interest.value}</div>
+                          <div className="text-[#6B6B6B] text-sm mb-1.5 uppercase tracking-wide">{interest.label}</div>
+                          <div className="text-[#2D2D2D] font-light text-lg">{interest.value}</div>
                         </div>
                       </div>
                     </CardContent>
@@ -119,41 +119,41 @@ export default function About() {
 
         {/* Programming Languages */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-16"
+          transition={{ duration: 0.8 }}
+          className="mb-24"
         >
-          <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-            <Code className="w-8 h-8 text-blue-500" />
+          <h2 className="text-4xl font-light serif-display text-[#2D2D2D] mb-12 flex items-center gap-4">
+            <Code className="w-8 h-8 text-[#9C8B7E]" />
             Programming Languages
           </h2>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-8">
             {languages.map((lang, index) => (
               <motion.div
                 key={lang.name}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1, duration: 0.5 }}
+                transition={{ delay: index * 0.15, duration: 0.8 }}
               >
-                <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm hover:border-slate-700 transition-all duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex justify-between items-center mb-3">
-                      <div className="flex items-center gap-2">
-                        <span className="text-2xl">{lang.badge}</span>
-                        <span className="text-white font-medium">{lang.name}</span>
+                <Card className="bg-[#FFFFFF] border-2 border-[#9C8B7E] luxury-shadow">
+                  <CardContent className="p-8">
+                    <div className="flex justify-between items-center mb-6">
+                      <div className="flex items-center gap-3">
+                        <span className="text-3xl">{lang.badge}</span>
+                        <span className="text-[#2D2D2D] font-light text-xl">{lang.name}</span>
                       </div>
-                      <span className="text-slate-400 text-sm">{lang.level}%</span>
+                      <span className="text-[#9C8B7E] text-sm font-medium">{lang.level}%</span>
                     </div>
-                    <div className="h-2 bg-slate-800 rounded-full overflow-hidden">
+                    <div className="h-1.5 bg-[#E8DED3] overflow-hidden">
                       <motion.div
                         initial={{ width: 0 }}
                         whileInView={{ width: `${lang.level}%` }}
                         viewport={{ once: true }}
-                        transition={{ delay: index * 0.1 + 0.3, duration: 1, ease: "easeOut" }}
-                        className="h-full bg-gradient-to-r from-blue-500 to-purple-600"
+                        transition={{ delay: index * 0.15 + 0.3, duration: 1.2, ease: "easeOut" }}
+                        className="h-full bg-[#9C8B7E]"
                       />
                     </div>
                   </CardContent>
@@ -165,31 +165,30 @@ export default function About() {
 
         {/* Frameworks & Libraries */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-16"
+          transition={{ duration: 0.8 }}
+          className="mb-24"
         >
-          <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-            <Cpu className="w-8 h-8 text-purple-500" />
+          <h2 className="text-4xl font-light serif-display text-[#2D2D2D] mb-12 flex items-center gap-4">
+            <Cpu className="w-8 h-8 text-[#9C8B7E]" />
             Frameworks & Libraries
           </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {frameworks.map((framework, index) => (
               <motion.div
                 key={framework.name}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.05, duration: 0.3 }}
+                transition={{ delay: index * 0.1, duration: 0.8 }}
               >
-                <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm hover:border-slate-700 transition-all duration-300 group overflow-hidden">
-                  <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${framework.color} opacity-10 rounded-full transform translate-x-16 -translate-y-16`} />
-                  <CardContent className="p-6 relative">
+                <Card className="bg-[#FFFFFF] border-2 border-[#9C8B7E] luxury-shadow group overflow-hidden relative">
+                  <CardContent className="p-8 relative">
                     <div>
-                      <h3 className="text-white font-semibold text-lg mb-1">{framework.name}</h3>
-                      <Badge variant="secondary" className="bg-slate-800 text-slate-300 text-xs">
+                      <h3 className="text-[#2D2D2D] font-light text-2xl mb-2 serif-display">{framework.name}</h3>
+                      <Badge variant="secondary" className="bg-[#E8DED3] text-[#6B6B6B] text-xs border-0 px-3 py-1">
                         {framework.category}
                       </Badge>
                     </div>
@@ -202,34 +201,34 @@ export default function About() {
 
         {/* Tools & Platforms */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-16"
+          transition={{ duration: 0.8 }}
+          className="mb-24"
         >
-          <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-            <GitBranch className="w-8 h-8 text-orange-500" />
+          <h2 className="text-4xl font-light serif-display text-[#2D2D2D] mb-12 flex items-center gap-4">
+            <GitBranch className="w-8 h-8 text-[#9C8B7E]" />
             Tools & Platforms
           </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {tools.map((tool, index) => {
               const Icon = tool.icon;
               return (
                 <motion.div
                   key={tool.name}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: index * 0.05, duration: 0.3 }}
+                  transition={{ delay: index * 0.1, duration: 0.8 }}
                 >
-                  <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm hover:border-slate-700 transition-all duration-300 group">
-                    <CardContent className="p-6 text-center">
-                      <div className="flex flex-col items-center gap-3">
-                        <div className="p-4 rounded-xl bg-gradient-to-br from-orange-500 to-red-600 group-hover:scale-110 transition-transform duration-300">
-                          <Icon className="w-6 h-6 text-white" />
+                  <Card className="bg-[#FFFFFF] border-2 border-[#9C8B7E] luxury-shadow group">
+                    <CardContent className="p-8 text-center">
+                      <div className="flex flex-col items-center gap-4">
+                        <div className="p-5 bg-[#E8DED3] border border-[#9C8B7E] group-hover:border-[#9C8B7E] transition-all duration-500">
+                          <Icon className="w-6 h-6 text-[#9C8B7E]" />
                         </div>
-                        <h3 className="text-white font-semibold">{tool.name}</h3>
+                        <h3 className="text-[#2D2D2D] font-light text-lg">{tool.name}</h3>
                       </div>
                     </CardContent>
                   </Card>
@@ -238,25 +237,6 @@ export default function About() {
             })}
           </div>
         </motion.div>
-
-        {/* GitHub Stats */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">GitHub Statistics</h2>
-          <Card className="bg-slate-900/50 border-slate-800 backdrop-blur-sm">
-            <CardContent className="p-8 flex justify-center">
-              <img
-                src="https://github-readme-stats.vercel.app/api?username=marcuxong&show_icons=true&locale=en&theme=radical&hide_border=true&bg_color=0d1117"
-                alt="Marcux's GitHub Stats"
-                className="rounded-lg"
-              />
-            </CardContent>
-          </Card>
-        </motion.div> */}
       </div>
     </div>
   );

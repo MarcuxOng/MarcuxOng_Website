@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Send, CheckCircle2, AlertCircle, ArrowRight } from "lucide-react";
+import { Github, Linkedin, CheckCircle2, AlertCircle, ArrowRight } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";

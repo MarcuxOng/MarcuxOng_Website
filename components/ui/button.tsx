@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "default" | "outline" | "secondary";
+  variant?: "default" | "outline" | "secondary" | "ghost";
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
@@ -11,11 +11,12 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         className={cn(
-          "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+          "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
           {
-            "bg-primary text-primary-foreground hover:bg-primary/90": variant === "default",
-            "border border-input bg-background hover:bg-accent hover:text-accent-foreground": variant === "outline",
-            "bg-secondary text-secondary-foreground hover:bg-secondary/80": variant === "secondary",
+            "bg-[#0A0A0A] text-white hover:bg-[#2563EB]": variant === "default",
+            "border border-[#E5E5E5] bg-transparent text-[#0A0A0A] hover:border-[#0A0A0A] hover:bg-[#F5F5F5]": variant === "outline",
+            "bg-[#F5F5F5] text-[#0A0A0A] hover:bg-[#E5E5E5]": variant === "secondary",
+            "text-[#0A0A0A] hover:bg-[#F5F5F5]": variant === "ghost",
           },
           className
         )}

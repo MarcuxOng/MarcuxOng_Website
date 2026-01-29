@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="light">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#F5F3EF] text-[#2D2D2D] overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-[#0A0A0A] overflow-x-hidden`}
       >
         <Navigation />
         <main className="pt-20">

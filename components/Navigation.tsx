@@ -22,33 +22,34 @@ export default function Navigation() {
   const pathname = usePathname();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#F5F3EF]/95 backdrop-blur-sm border-b border-[#E8DED3]">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[#E5E5E5]">
       <nav className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <span className="text-2xl font-medium serif-display tracking-tight text-[#2D2D2D] elegant-underline">Marcux Ong</span>
+            <span className="text-lg font-semibold tracking-tight text-[#0A0A0A] display-heading">Marcux</span>
+            <span className="hidden sm:inline-block ml-2 text-sm text-[#737373]">— Portfolio</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-center space-x-1">
+            <div className="flex items-center space-x-1">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
                   className={cn(
-                    "px-5 py-2 text-sm font-medium transition-all duration-300 relative",
+                    "px-4 py-2 text-sm transition-colors duration-200 relative",
                     pathname === item.href
-                      ? "text-[#9C8B7E]"
-                      : "text-[#6B6B6B] hover:text-[#2D2D2D]"
+                      ? "text-[#2563EB] font-medium"
+                      : "text-[#737373] hover:text-[#0A0A0A]"
                   )}
                 >
                   {item.name}
                   {pathname === item.href && (
                     <motion.div
                       layoutId="activeNav"
-                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#9C8B7E]"
+                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#2563EB]"
                       transition={{ type: "spring", stiffness: 380, damping: 30 }}
                     />
                   )}
@@ -61,13 +62,13 @@ export default function Navigation() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 text-[#6B6B6B] hover:text-[#2D2D2D] focus:outline-none"
+              className="inline-flex items-center justify-center p-2 text-[#737373] hover:text-[#0A0A0A] focus:outline-none"
             >
               <span className="sr-only">Open main menu</span>
               {isOpen ? (
-                <X className="block h-6 w-6" aria-hidden="true" />
+                <X className="block h-5 w-5" aria-hidden="true" />
               ) : (
-                <Menu className="block h-6 w-6" aria-hidden="true" />
+                <Menu className="block h-5 w-5" aria-hidden="true" />
               )}
             </button>
           </div>
@@ -83,16 +84,16 @@ export default function Navigation() {
               transition={{ duration: 0.2 }}
               className="md:hidden"
             >
-              <div className="px-4 pt-4 pb-6 space-y-2 border-t border-[#E8DED3] mt-4">
+              <div className="py-4 space-y-1 border-t border-[#E5E5E5]">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
                     className={cn(
-                      "block px-4 py-3 text-base font-medium transition-colors duration-300",
+                      "block px-4 py-3 text-sm transition-colors duration-200",
                       pathname === item.href
-                        ? "text-[#9C8B7E] bg-[#F9F6F2]"
-                        : "text-[#6B6B6B] hover:text-[#2D2D2D] hover:bg-[#F9F6F2]/50"
+                        ? "text-[#2563EB] font-medium bg-[#F5F5F5]"
+                        : "text-[#737373] hover:text-[#0A0A0A] hover:bg-[#F5F5F5]"
                     )}
                     onClick={() => setIsOpen(false)}
                   >

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Sparkles } from "lucide-react";
+import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -13,71 +13,67 @@ export default function Projects() {
   const projects = data.projects;
 
   return (
-    <div className="min-h-screen py-32 px-6 sm:px-8 lg:px-12 bg-[#F5F3EF]">
+    <div className="min-h-screen py-24 px-6 sm:px-8 lg:px-12 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-24"
+          transition={{ duration: 0.6 }}
+          className="mb-16"
         >
-          <h1 className="text-5xl md:text-7xl font-light serif-display text-[#2D2D2D] mb-6">
-            Featured <span className="gradient-text font-medium">Projects</span>
+          <div className="label-mono mb-4">02 - Work</div>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl display-heading text-[#0A0A0A] mb-6">
+            Featured Projects
           </h1>
-          <p className="text-xl text-[#6B6B6B] max-w-2xl mx-auto font-light">
+          <p className="text-xl text-[#737373] max-w-2xl">
             Showcasing my technical skills through real-world applications
           </p>
         </motion.div>
 
         {/* Projects Grid */}
-        <div className="grid lg:grid-cols-2 gap-12 mb-24">
+        <div className="grid lg:grid-cols-2 gap-8 mb-20">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.2, duration: 0.8 }}
+              transition={{ delay: index * 0.1, duration: 0.5 }}
             >
-              <Card className="bg-[#FFFFFF] border-2 border-[#9C8B7E] luxury-shadow h-full group">
-                <CardHeader className="space-y-6">
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="text-5xl p-6 bg-[#E8DED3] border border-[#9C8B7E] group-hover:border-[#9C8B7E] transition-all duration-500">
+              <Card className="h-full hover:border-[#0A0A0A] group">
+                <CardHeader className="space-y-4">
+                  <div className="flex items-start justify-between">
+                    <div className="text-4xl p-4 bg-[#F5F5F5] border border-[#E5E5E5] group-hover:border-[#0A0A0A] transition-colors">
                       {project.icon}
                     </div>
                     <a
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="p-3 border border-[#E5E5E5] hover:border-[#0A0A0A] hover:bg-[#F5F5F5] transition-all"
                     >
-                      <Button
-                        variant="outline"
-                        className="border-2 border-[#9C8B7E] text-[#9C8B7E] hover:bg-[#9C8B7E] hover:text-[#2D2D2D] transition-all duration-500 h-10 px-5"
-                      >
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        View
-                      </Button>
+                      <ArrowUpRight className="w-4 h-4 text-[#0A0A0A]" />
                     </a>
                   </div>
-                  <h2 className="text-3xl font-light serif-display text-[#2D2D2D] group-hover:text-[#9C8B7E] transition-colors duration-500">
-                    {project.title}
-                  </h2>
-                  <p className="text-[#6B6B6B] leading-relaxed font-light">
+                  <div>
+                    <span className="label-mono text-[#2563EB]">Project 0{index + 1}</span>
+                    <h2 className="text-2xl font-semibold text-[#0A0A0A] mt-2 group-hover:text-[#2563EB] transition-colors">
+                      {project.title}
+                    </h2>
+                  </div>
+                  <p className="text-[#737373] leading-relaxed">
                     {project.description}
                   </p>
                 </CardHeader>
-                <CardContent className="space-y-8">
+                <CardContent className="space-y-6">
                   {/* Key Features */}
                   <div>
-                    <h3 className="text-[#2D2D2D] font-medium mb-4 flex items-center gap-2 uppercase tracking-wide text-sm">
-                      <Sparkles className="w-4 h-4 text-[#9C8B7E]" />
-                      Key Features
-                    </h3>
-                    <ul className="space-y-3">
+                    <h3 className="label-mono mb-3">Key Features</h3>
+                    <ul className="space-y-2">
                       {project.features.map((feature, idx) => (
-                        <li key={idx} className="text-[#6B6B6B] text-sm leading-relaxed flex gap-3 font-light">
-                          <span className="text-[#9C8B7E] mt-1">—</span>
+                        <li key={idx} className="text-[#737373] text-sm flex gap-3">
+                          <span className="text-[#2563EB]"></span>
                           <span>{feature}</span>
                         </li>
                       ))}
@@ -86,16 +82,10 @@ export default function Projects() {
 
                   {/* Technologies */}
                   <div>
-                    <h3 className="text-[#2D2D2D] font-medium mb-4 uppercase tracking-wide text-sm">Tech Stack</h3>
+                    <h3 className="label-mono mb-3">Tech Stack</h3>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech) => (
-                        <Badge
-                          key={tech}
-                          variant="outline"
-                          className="border-[#9C8B7E] bg-[#E8DED3] text-[#6B6B6B] hover:border-[#9C8B7E] hover:bg-[#9C8B7E] hover:text-[#2D2D2D] transition-all duration-500 px-3 py-1"
-                        >
-                          {tech}
-                        </Badge>
+                        <Badge key={tech} variant="outline">{tech}</Badge>
                       ))}
                     </div>
                   </div>
@@ -111,17 +101,16 @@ export default function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center"
         >
-          <Card className="bg-[#F9F6F2] border-2 border-[#E8DED3] luxury-shadow">
-            <CardContent className="p-12">
+          <Card className="bg-[#0A0A0A] border-[#0A0A0A]">
+            <CardContent className="p-12 text-center">
               <div className="flex justify-center mb-6">
-                <div className="p-6 bg-[#9C8B7E]/10 border-2 border-[#9C8B7E]">
-                  <Github className="w-12 h-12 text-[#9C8B7E]" />
+                <div className="p-4 bg-white/10 border border-white/20">
+                  <Github className="w-8 h-8 text-white" />
                 </div>
               </div>
-              <h3 className="text-3xl font-light serif-display text-[#2D2D2D] mb-4">More Projects on GitHub</h3>
-              <p className="text-[#6B6B6B] mb-8 max-w-2xl mx-auto font-light">
+              <h3 className="text-2xl font-semibold text-white mb-3">More Projects on GitHub</h3>
+              <p className="text-white/60 mb-8 max-w-lg mx-auto">
                 Check out my GitHub profile for more projects, open-source contributions, and code samples.
               </p>
               <a
@@ -129,9 +118,9 @@ export default function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button className="bg-[#2D2D2D] hover:bg-[#1F1F1F] text-white px-8 py-6 text-lg font-medium transition-all duration-500 luxury-shadow">
-                  Visit My GitHub
-                  <ExternalLink className="w-5 h-5 ml-2" />
+                <Button className="bg-white text-[#0A0A0A] hover:bg-[#2563EB] hover:text-white px-8 py-6">
+                  Visit GitHub
+                  <ExternalLink className="w-4 h-4 ml-2" />
                 </Button>
               </a>
             </CardContent>

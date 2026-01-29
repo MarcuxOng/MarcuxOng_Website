@@ -1,97 +1,121 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --background: #F5F3EF;
-  --foreground: #2D2D2D;
-  --accent-primary: #9C8B7E;
-  --accent-deep: #1F1F1F;
-  --accent-light: #F9F6F2;
+  --background: #FFFFFF;
+  --foreground: #0A0A0A;
+  --accent: #2563EB;
+  --muted: #F5F5F5;
+  --muted-foreground: #737373;
+  --border: #E5E5E5;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), 'Inter', -apple-system, sans-serif;
+  font-family: 'Inter', var(--font-geist-sans), -apple-system, sans-serif;
   min-height: 100vh;
-  letter-spacing: -0.011em;
-}
-
-/* Premium Typography */
-.serif-display {
-  font-family: 'Playfair Display', serif;
   letter-spacing: -0.02em;
 }
 
-.serif-elegant {
-  font-family: 'Cormorant Garamond', serif;
-  letter-spacing: 0.01em;
+/* Editorial Display Typography */
+.display-heading {
+  font-family: 'Space Grotesk', var(--font-geist-sans), sans-serif;
+  letter-spacing: -0.04em;
+  font-weight: 700;
 }
 
-/* Luxury Gradient Text */
-.gradient-text {
-  background: linear-gradient(135deg, #9C8B7E 0%, #7A6E63 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.mono-text {
+  font-family: var(--font-geist-mono), 'SF Mono', monospace;
+  letter-spacing: -0.01em;
 }
 
-/* Subtle Elevation Effect */
-.luxury-shadow {
-  box-shadow: 0 1px 3px rgba(45, 45, 45, 0.04), 0 4px 16px rgba(45, 45, 45, 0.06);
+/* Accent Color Text */
+.accent-text {
+  color: var(--accent);
 }
 
-.luxury-shadow:hover {
-  box-shadow: 0 2px 6px rgba(45, 45, 45, 0.06), 0 8px 24px rgba(45, 45, 45, 0.08);
-  transform: translateY(-2px);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+/* Editorial Grid Lines */
+.grid-lines {
+  background-image: 
+    linear-gradient(to right, var(--border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--border) 1px, transparent 1px);
+  background-size: 4rem 4rem;
 }
 
-/* Premium Border */
-.luxury-border {
-  border: 1px solid rgba(148, 137, 121, 0.15);
+/* Clean Shadow */
+.editorial-shadow {
+  box-shadow: 0 0 0 1px var(--border);
 }
 
-.luxury-border-accent {
-  border: 2px solid var(--accent-primary);
+.editorial-shadow:hover {
+  box-shadow: 0 0 0 1px var(--foreground);
+  transition: all 0.2s ease;
 }
 
-/* Refined Scrollbar */
+/* Accent Border on Hover */
+.accent-border-hover {
+  transition: border-color 0.2s ease;
+}
+
+.accent-border-hover:hover {
+  border-color: var(--accent);
+}
+
+/* Refined Scrollbar - Minimal */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #F5F3EF;
+  background: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #9C8B7E;
-  border-radius: 5px;
-  border: 2px solid #F5F3EF;
+  background: var(--border);
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #7A6E63;
+  background: var(--muted-foreground);
 }
 
-/* Elegant Underline Effect */
-.elegant-underline {
+/* Editorial Underline Effect */
+.editorial-underline {
   position: relative;
   display: inline-block;
 }
 
-.elegant-underline::after {
+.editorial-underline::after {
   content: '';
   position: absolute;
-  width: 0;
+  width: 100%;
   height: 2px;
-  bottom: -4px;
+  bottom: -2px;
   left: 0;
-  background-color: var(--accent-primary);
-  transition: width 0.3s ease;
+  background-color: var(--accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
 }
 
-.elegant-underline:hover::after {
+.editorial-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Number/Label styling */
+.label-mono {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+/* Divider line */
+.divider {
+  height: 1px;
+  background: var(--border);
   width: 100%;
 }

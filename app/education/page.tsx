@@ -10,72 +10,73 @@ export default function Education() {
   const data = getPortfolioData();
 
   return (
-    <div className="min-h-screen py-32 px-6 sm:px-8 lg:px-12 bg-[#F5F3EF]">
+    <div className="min-h-screen py-24 px-6 sm:px-8 lg:px-12 bg-white">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-24"
+          transition={{ duration: 0.6 }}
+          className="mb-16"
         >
-          <h1 className="text-5xl md:text-7xl font-light serif-display text-[#2D2D2D] mb-6">
-            My <span className="gradient-text font-medium">Education</span>
+          <div className="label-mono mb-4">04 - Education</div>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl display-heading text-[#0A0A0A] mb-6">
+            Education
           </h1>
-          <p className="text-xl text-[#6B6B6B] max-w-2xl mx-auto font-light">
+          <p className="text-xl text-[#737373] max-w-2xl">
             Academic journey and achievements
           </p>
         </motion.div>
 
         {/* Education Cards */}
-        <div className="space-y-12">
+        <div className="space-y-8">
           {data.education.map((edu, eduIndex) => (
             <motion.div
               key={eduIndex}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: eduIndex * 0.2 }}
+              transition={{ duration: 0.5, delay: eduIndex * 0.1 }}
             >
-              <Card className="bg-[#FFFFFF] border-2 border-[#9C8B7E] luxury-shadow">
+              <Card className="hover:border-[#0A0A0A]">
                 <CardHeader>
-                  <div className="flex items-center gap-6">
-                    <div className="p-5 bg-[#E8DED3] border border-[#9C8B7E]">
-                      <GraduationCap className="w-8 h-8 text-[#9C8B7E]" />
+                  <div className="flex items-center gap-4">
+                    <div className="p-4 bg-[#F5F5F5] border border-[#E5E5E5]">
+                      <GraduationCap className="w-6 h-6 text-[#2563EB]" />
                     </div>
                     <div className="flex-1">
-                      <h2 className="text-3xl font-light serif-display text-[#2D2D2D]">{edu.institution}</h2>
-                      <p className="text-[#6B6B6B] font-light">{edu.location}</p>
+                      <h2 className="text-2xl font-semibold text-[#0A0A0A]">{edu.institution}</h2>
+                      <p className="text-[#737373]">{edu.location}</p>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div>
-                    <h3 className="text-2xl font-light serif-display text-[#2D2D2D] mb-2">{edu.degree}</h3>
-                    <p className="text-[#6B6B6B] flex items-center gap-2 font-light">
-                      <span className="w-2 h-2 bg-[#9C8B7E]"></span>
+                    <h3 className="text-xl font-medium text-[#0A0A0A] mb-2">{edu.degree}</h3>
+                    <p className="text-[#737373] flex items-center gap-2">
+                      <span className="w-2 h-2 bg-[#2563EB]"></span>
                       {edu.period}
                     </p>
                   </div>
                   
                   {edu.achievements && edu.achievements.length > 0 && (
-                    <div className="pt-6 border-t border-[#9C8B7E]">
-                      <div className="flex items-center gap-3 mb-6">
-                        <Award className="w-5 h-5 text-[#9C8B7E]" />
-                        <h4 className="text-lg font-medium text-[#2D2D2D] uppercase tracking-wide">Achievements & Highlights</h4>
+                    <div className="pt-6 border-t border-[#E5E5E5]">
+                      <div className="flex items-center gap-3 mb-4">
+                        <Award className="w-5 h-5 text-[#2563EB]" />
+                        <h4 className="label-mono">Achievements & Highlights</h4>
                       </div>
-                      <div className="space-y-4">
+                      <div className="space-y-3">
                         {edu.achievements.map((achievement, index) => (
                           <motion.div
                             key={index}
-                            initial={{ opacity: 0, x: -20 }}
+                            initial={{ opacity: 0, x: -10 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: index * 0.1, duration: 0.5 }}
+                            transition={{ delay: index * 0.1, duration: 0.4 }}
                             className="flex items-start gap-3"
                           >
-                            <div className="w-2 h-2 bg-[#9C8B7E] mt-2 flex-shrink-0"></div>
-                            <p className="text-[#6B6B6B] leading-relaxed font-light">{achievement}</p>
+                            <span className="text-[#2563EB] mt-1"></span>
+                            <p className="text-[#737373]">{achievement}</p>
                           </motion.div>
                         ))}
                       </div>

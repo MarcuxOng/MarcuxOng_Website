@@ -25,14 +25,14 @@
   ],
   "languages": [
     { "name": "Python", "level": 90, "badge": "🐍" },
-    { "name": "JavaScript", "level": 85, "badge": "⚡" },
-    { "name": "TypeScript", "level": 70, "badge": "📘" },
+    { "name": "TypeScript", "level": 85, "badge": "📘" },
     { "name": "SQL", "level": 85, "badge": "🗄️" },
+    { "name": "JavaScript", "level": 80, "badge": "⚡" },
     { "name": "C#", "level": 60, "badge": "♯" }
   ],
   "frameworks": [
-    { "name": "React", "category": "Frontend", "color": "from-cyan-500 to-blue-500" },
     {"name": "Next.js", "category": "Frontend", "color": "from-slate-700 to-slate-900" },
+    { "name": "React", "category": "Frontend", "color": "from-cyan-500 to-blue-500" },
     { "name": "Angular", "category": "Frontend", "color": "from-red-500 to-pink-500" },
     { "name": "FastAPI", "category": "Backend", "color": "from-teal-500 to-green-500" },
     { "name": "Flask", "category": "Backend", "color": "from-gray-700 to-gray-900" },
@@ -43,6 +43,7 @@
     { "name": "Github Actions", "icon": "GitBranch" },
     { "name": "Docker", "icon": "Box" },
     { "name": "AI/LLM", "icon": "Cpu" },
+    { "name": "MCP", "icon": "Cpu" },
     { "name": "MySQL", "icon": "Database" },
     { "name": "Figma", "icon": "Code" }
   ],
@@ -73,7 +74,7 @@
         "Developed full-stack applications using Angular, Python FastAPI and MariaDB",
         "Designed and optimized RESTful APIs for reliable data handling, simultaneously enhancing UI components and implementing component-based architecture principles to deliver cohesive, end-to-end features"
       ],
-      "skills": ["Angular", "Python", "FastAPI", "MariaDB", "AI/LLM"],
+      "skills": ["Angular", "FastAPI", "MariaDB", "AI/LLM", "MCP"],
       "logo": "🏦"
     },
     {
@@ -85,7 +86,7 @@
       "responsibilities": [
         "Learn about coffee, improve on customer service skills, build up time management skills etc."
       ],
-      "skills": ["Customer Service", "Time Management", "Team Collaboration"],
+      "skills": ["Time Management", "Team Collaboration", "Customer Service"],
       "logo": "☕"
     }
   ],
@@ -94,7 +95,7 @@
       "title": "FinSight",
       "description": "An AI-powered personal finance management platform using Python FastAPI, Next.js 16, PostgreSQL (Supabase), and Google Gemini AI with automated transaction categorization, spending analytics, and personalized financial insights generation.",
       "link": "https://github.com/MarcuxOng/finsight",
-      "technologies": ["Next.js", "Python", "FastAPI", "PostgreSQL", "Supabase", "Gemini"],
+      "technologies": ["Next.js", "FastAPI", "Supabase", "Gemini"],
       "features": [
         "Built RESTful APIs with Row Level Security (RLS) policies for secure transaction management",
         "AI-driven categorization service using prompt engineering with Google Gemini AI",
@@ -109,7 +110,7 @@
       "title": "WealthPilot",
       "description": "An AI-powered wealth management platform using Python FastAPI, React Vite, MySQL, and Google Gemini AI with real-time client analysis, product catalog, and historical tracking capabilities.",
       "link": "https://github.com/MarcuxOng/wealthpilot",
-      "technologies": ["React Vite", "Python", "FastAPI", "MySQL", "Gemini"],
+      "technologies": ["React Vite", "FastAPI", "MySQL", "Gemini"],
       "features": [
         "Developed RESTful APIs with SQLAlchemy ORM for client/product management",
         "AI analysis endpoints with system prompt templates for regulatory compliance",
@@ -123,7 +124,7 @@
       "title": "To-Do App",
       "description": "A full-stack task management application using Python FastAPI, React, MySQL, and WebSocket integration with real-time collaboration, workspace organization, and comprehensive task tracking capabilities.",
       "link": "https://github.com/MarcuxOng/todo-app",
-      "technologies": ["React", "Python", "FastAPI", "MySQL", "WebSocket", "JWT"],
+      "technologies": ["React", "FastAPI", "MySQL", "WebSocket", "JWT"],
       "features": [
         "Implemented RESTful APIs with SQLAlchemy ORM for task/workspace management",
         "JWT authentication for secure access control",

@@ -92,6 +92,23 @@
   ],
   "projects": [
     {
+      "title": "AI/LLM Playground",
+      "description": "A multi-agent AI platform with LangGraph ReAct supervisor architecture featuring four specialist agent presets and a FastMCP server for seamless tool orchestration. Built with persistent conversation threads, dynamic DB-backed configuration, and advanced RAG capabilities for intelligent agent collaboration.",
+      "link": "https://github.com/MarcuxOng/ai-llm-playground",
+      "technologies": ["FastAPI", "Gemini", "LangChain/LangGraph", "Pinecone", "Docker", "GitHub Actions"],
+      "features": [
+        "Multi-agent ReAct supervisor architecture with four specialist agent presets (coder, research, analyst, knowledge)",
+        "FastMCP server with auto-registering tools from shared registry for dynamic tool orchestration",
+        "SQLAlchemy-backed agent configuration system enabling runtime tool and prompt customization",
+        "Persistent conversation threads using LangGraph checkpointers for stateful agent interactions",
+        "Pinecone + Gemini Embeddings RAG pipeline for semantic knowledge retrieval",
+        "SSE streaming endpoints with Google AI Studio integration for real-time response streaming",
+        "Multi-stage Docker containerization with GitHub Actions CI/CD pipeline for automated testing and deployment"
+      ],
+      "gradient": "from-gray-700 to-gray-900",
+      "icon": "🤖"
+    },
+    {
       "title": "FinSight",
       "description": "An AI-powered personal finance management platform using Python FastAPI, Next.js 16, PostgreSQL (Supabase), and Google Gemini AI with automated transaction categorization, spending analytics, and personalized financial insights generation.",
       "link": "https://github.com/MarcuxOng/finsight",

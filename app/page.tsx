@@ -2,10 +2,9 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Code2, Database, Cpu, Github, Linkedin, LucideIcon, Download } from "lucide-react";
+import { ArrowRight, Code2, Database, Cpu, Github, Linkedin, Mail, LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getPortfolioData } from "@/lib/utils";
-import { downloadResume } from "@/lib/download-handler";
 
 export default function Home() {
   const data = getPortfolioData();
@@ -90,12 +89,12 @@ export default function Home() {
                   >
                     <Linkedin className="w-4 h-4 text-[#0A0A0A]" />
                   </a>
-                  <button
-                    onClick={downloadResume}
+                  <a
+                    href={`mailto:${data.personal.email}`}
                     className="p-3 border border-[#E5E5E5] hover:border-[#0A0A0A] hover:bg-[#F5F5F5] transition-all duration-200"
                   >
-                    <Download className="w-4 h-4 text-[#0A0A0A]" />
-                  </button>
+                    <Mail className="w-4 h-4 text-[#0A0A0A]" />
+                  </a>
                 </div>
               </div>
             </motion.div>

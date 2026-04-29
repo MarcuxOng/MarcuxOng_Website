@@ -154,6 +154,24 @@
   ],
   "certifications": [
     {
+      "title": "Google AI Essentials",
+      "provider": "Google",
+      "description": "Foundational course covering AI fundamentals, machine learning concepts, and practical applications of AI in everyday business scenarios.",
+      "skills": ["AI Fundamentals", "Machine Learning Basics", "AI Applications", "Responsible AI"],
+      "link": "https://www.coursera.org/account/accomplishments/specialization/QHGI703USPXS",
+      "gradient": "from-blue-500 to-cyan-500",
+      "icon": "🤖"
+    },
+    {
+      "title": "Generative AI in Action",
+      "provider": "IBM",
+      "description": "Comprehensive training on generative AI technologies, including Large Language Models (LLMs), prompt engineering, and practical implementation strategies for real-world applications.",
+      "skills": ["Generative AI", "LLMs", "Prompt Engineering", "AI Implementation"],
+      "link": "https://www.credly.com/badges/fd7a7737-383e-4e2f-98ba-705876c2c805",
+      "gradient": "from-purple-500 to-pink-500",
+      "icon": "✨"
+    },
+    {
       "title": "Soft Skills in IT",
       "provider": "Great Learning",
       "description": "Gained key soft skills for IT fields, such as clear communication, teamwork, problem-solving, negotiation, and self-awareness. Understood their role in influencing others, building relationships, and career growth and the benefits such as adaptability, productivity, trust, and organizational skills.",

@@ -22,7 +22,7 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <div className="label-mono mb-4">02 - Work</div>
+          <div className="label-mono mb-4">04 - Projects</div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl display-heading text-[#0A0A0A] mb-6">
             Featured Projects
           </h1>

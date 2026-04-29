@@ -19,7 +19,7 @@ export default function Education() {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <div className="label-mono mb-4">04 - Education</div>
+          <div className="label-mono mb-4">03 - Education</div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl display-heading text-[#0A0A0A] mb-6">
             Education
           </h1>

@@ -4,8 +4,10 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
+import { downloadResume } from "@/lib/download-handler";
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -55,6 +57,16 @@ export default function Navigation() {
                   )}
                 </Link>
               ))}
+              <div className="ml-4 pl-4 border-l border-[#E5E5E5]">
+                <Button
+                  variant="outline"
+                  onClick={downloadResume}
+                  className="flex items-center gap-2 text-xs sm:text-sm px-3 sm:px-4 py-2"
+                >
+                  <Download className="w-4 h-4" />
+                  <span className="hidden sm:inline">Resume</span>
+                </Button>
+              </div>
             </div>
           </div>
 
@@ -100,6 +112,19 @@ export default function Navigation() {
                     {item.name}
                   </Link>
                 ))}
+                <div className="px-4 py-3 border-t border-[#E5E5E5]">
+                  <Button
+                    variant="outline"
+                    onClick={() => {
+                      downloadResume();
+                      setIsOpen(false);
+                    }}
+                    className="w-full flex items-center justify-center gap-2"
+                  >
+                    <Download className="w-4 h-4" />
+                    Download Resume
+                  </Button>
+                </div>
               </div>
             </motion.div>
           )}
